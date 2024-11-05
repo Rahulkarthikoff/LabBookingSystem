@@ -1,24 +1,32 @@
 const express = require('express')
-const dotenv = require('dotenv')
+const mongoose = require('mongoose')
+const dotenv = require('dotenv').config()
 const colors = require('colors')
-const cors = require('cors')
-dotenv.config()
-
-const app = express()
-const PORT = process.env.PORT || 5000
 
 const connectDB = require('./config/db')
+const ScheduledJob = require('./service/scheduledJob')
+
+const { errorMiddleware } = require('./middleware/errorMiddleware')
+
+const PORT = process.env.PORT || 5000
+
+const app = express()
+
+connectDB()
+ScheduledJob()
+
+app.use(express.json)
+app.use(express.urlencoded({extended:false}))
+
+app.use('/api/users',require('./router/userRoutes'))
+app.use('./api/labs',require('./router/labRoutes'))
+app.use('./api/bookings',require('./router/bookingRoutes'))
+
+
+app.use(errorMiddleware)
 
 
 
-
-
-const userRoutes = require('./router/userRoutes')
-
-app.use('/user',userRoutes)
-app.get('/',(req,res)=>{
-    res.send("Hi How r u")
-})
-app.listen(process.env.PORT,()=>{
-    console.log(`Port is running ${PORT}`);
+app.listen(PORT,()=>{
+    console.log(`Server is running at ${PORT} successfully`);
 })

@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router()
 
-router.get('/login',(req,res)=>{
-    console.log('Inside UserRouter');
-})
+const { RegisterUser, LoginUser ,GetMe} = require('../controller/userController')
 
+const {protect} = require('../middleware/authMidlleware')
+
+
+router.route('/login').post(LoginUser)
+
+router.route('/me').get(protect ,GetMe)
 module.exports = router;
