@@ -1,0 +1,67 @@
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: "D:/Volume(E)/main/main/LabBookingSystem/lab/public/applecomputer.jpg";
+  }
+  
+  .card-image {
+    /* width: 70%; */
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .details-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #001a4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+
+  /* Popup Styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-button,
+  .see-bookings-button,
+  .close-button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  

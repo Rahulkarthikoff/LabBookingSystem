@@ -1,0 +1,56 @@
+
+.login-text{
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+
+/* Login form */
+.login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-left: 550px;
+    margin-top: 150px;
+}
+
+/* Dropdown */
+.login-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Forgot password link */
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #007BFF;
+}
+
+/* Login button */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}

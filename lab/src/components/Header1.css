@@ -1,0 +1,13 @@
+.header {
+  background-color: #001a4d;
+  color: white;
+  padding: 20px;
+  border-bottom-left-radius: 60px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20px;
+}
+
+.header h1 {
+  text-align: right;
+}
