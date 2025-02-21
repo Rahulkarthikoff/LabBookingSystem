@@ -1,0 +1,95 @@
+/* 
+
+body{
+  background-color: #001a4d;
+}
+.bookings-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #001a4d;
+  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.calendar-wrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  background: white;
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  padding: 10px;
+}
+
+.react-calendar__tile--active {
+  background: #001a4d;
+  color: white;
+}
+
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.dot-full {
+  background-color: red; 
+}
+
+.dot-partial {
+  background-color: yellow; 
+}
+
+.dot-none {
+  background-color: green; 
+
+
+.booking-details-card {
+  background: white;
+  color: #001a4d;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-item {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.booking-item p {
+  margin: 5px 0;
+}
+
+.no-bookings {
+  color: #001a4d;
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+} */
